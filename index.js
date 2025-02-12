@@ -7,7 +7,7 @@ const cors = require("cors");
 // const cors = require('cors');
 
 const corsOptions = {
-    origin: "*",  // Allows all origins
+    origin: ["http://localhost:5173", "https://stately-chebakia-c9b9c8.netlify.app"],  // Allow multiple origins
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization", "id", "bookid"],  
 };
