@@ -11,17 +11,7 @@ const corsOptions = {
     credentials: true,  
     allowedHeaders: ["Content-Type", "Authorization", "id", "bookid"],  
 };
-
 app.use(cors(corsOptions));
-
-
-
-
-
-app.use(cors(corsOptions));
-
-
-
 app.use(express.json());
 
 // Create routes
