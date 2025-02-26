@@ -7,8 +7,8 @@ const cors = require("cors");
 // const cors = require('cors');
 
 const corsOptions = {
-    origin: ["https://bookheavenrj.netlify.app"],  // Allow your frontend URL
-    credentials: true,  
+    origin: "*",  // Allows all origins
+    credentials: true,
     allowedHeaders: ["Content-Type", "Authorization", "id", "bookid"],  
 };
 app.use(cors(corsOptions));
