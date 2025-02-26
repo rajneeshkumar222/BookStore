@@ -7,10 +7,11 @@ const cors = require("cors");
 // const cors = require('cors');
 
 const corsOptions = {
-    origin: "*",  // Allows all origins
+    origin: "https://dynamic-croissant-d0dd4e.netlify.app",  // Replace with your frontend URL ✅
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization", "id", "bookid"],  
 };
+
 app.use(cors(corsOptions));
 app.use(express.json());
 
